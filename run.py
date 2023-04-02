@@ -33,30 +33,30 @@ class DetThread(QThread):
 
     def __init__(self):
         super(DetThread, self).__init__()
-        self.weights = './weights/best.pt'
+        self.weights = './weights/yolov5s.pt'
         self.source = '0'
         self.conf_thres = 0.25
 
     @torch.no_grad()
     def run(self,
-            data='./nw_multi_cls_original.yaml',
+            # data='./nw_multi_cls_original.yaml',
             imgsz=640,  # inference size (pixels)
             iou_thres=0.45,  # NMS IOU threshold
             max_det=1000,  # maximum detections per image
             device='cpu',  # cuda device, i.e. 0 or 0,1,2,3 or cpu
-            view_img=True,  # show results
-            save_txt=False,  # save results to *.txt
-            save_conf=False,  # save confidences in --save-txt labels
-            save_crop=False,  # save cropped prediction boxes
-            nosave=False,  # do not save images/videos
+            # view_img=True,  # show results
+            # save_txt=False,  # save results to *.txt
+            # save_conf=False,  # save confidences in --save-txt labels
+            # save_crop=False,  # save cropped prediction boxes
+            # nosave=False,  # do not save images/videos
             classes=None,  # filter by class: --class 0, or --class 0 2 3
             agnostic_nms=False,  # class-agnostic NMS
             augment=False,  # augmented inference
-            visualize=False,  # visualize features
-            update=False,  # update all models
-            project='runs/detect',  # save results to project/name
-            name='exp',  # save results to project/name
-            exist_ok=False,  # existing project/name ok, do not increment
+            # visualize=False,  # visualize features
+            # update=False,  # update all models
+            # project='runs/detect',  # save results to project/name
+            # name='exp',  # save results to project/name
+            # exist_ok=False,  # existing project/name ok, do not increment
             line_thickness=3,  # bounding box thickness (pixels)
             hide_labels=False,  # hide labels
             hide_conf=False,  # hide confidences
@@ -141,7 +141,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
         self.setupUi(self)
-        self.model = './weights/best.pt'
+        self.model = './weights/yolov5s.pt'
         self.det_thread = DetThread()
         self.det_thread.source = '0'
         self.det_thread.send_img.connect(lambda x: self.show_image(x, self.label_result))

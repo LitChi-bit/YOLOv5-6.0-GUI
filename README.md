@@ -11,7 +11,7 @@
 ✦ 提供深色和浅色两个UI。(深色版本显示不理想，最近没有时间去完善，想用也可以用，但是不建议用)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Provides dark and light UI.<br>
 
-![image](https://github.com/sakkios/YOLOv5-6.0-GUI/blob/main/demo.png) 
+![image](https://github.com/LitChi-bit/YOLOv5-6.0-GUI/blob/main/demo.png) 
 
 
 ## Installation and use

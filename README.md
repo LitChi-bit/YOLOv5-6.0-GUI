@@ -70,5 +70,5 @@ import main_ui_dark
 
 ## Reference<br>
 
-<p><a href="https://github.com/ultralytics/yolov5">ultralytics/yolov5</a><br>
-<a href="https://github.com/Javacr/PyQt5-YOLOv5">Javacr/PyQt5-YOLOv5</a></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ultralytics/yolov5">ultralytics/yolov5</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/Javacr/PyQt5-YOLOv5">Javacr/PyQt5-YOLOv5</a></p>
